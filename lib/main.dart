@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:mediaprobe/bindings/home_view_binding.dart';
+import 'package:mediaprobe/constants/theme.dart';
 import 'package:mediaprobe/views/home_view.dart';
 
 void main() {
@@ -10,14 +13,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Media Probe',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.deepPurple,
-        ),
-        useMaterial3: true,
-      ),
+      debugShowCheckedModeBanner: false,
+      theme: CustomThemes.theme,
+      initialBinding: InitialBinding(),
       home: const HomeView(),
     );
   }

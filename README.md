@@ -2,6 +2,9 @@
 
 A new Flutter project.
 
+
+- I used MVC structure in the project
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
